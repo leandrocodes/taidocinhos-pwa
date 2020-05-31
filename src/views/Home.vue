@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Pontos de Fidelidade</h1>
+    <img src="../assets/images/logo.png" alt="" />
+    <p>Com eles, até fica mais fácil ser feliz!</p>
+    <p>Faça Login ou Registre-se para acessar o Sistema de Pontos</p>
+    <div class="buttons">
+      <button class="register__button">Registro</button>
+      <button class="login__button">Login</button>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+export default {}
 </script>
+
+<style lang="scss" scoped></style>

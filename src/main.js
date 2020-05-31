@@ -5,6 +5,8 @@ import router from './router'
 import store from './store'
 import { createProvider } from './vue-apollo'
 
+import './styles/main.scss'
+
 Vue.config.productionTip = false
 
 new Vue({

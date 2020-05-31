@@ -14,8 +14,7 @@
 </template>
 
 <script>
-import gql from 'graphql-tag'
-
+import login from './graphql/login.gql'
 export default {
   data: () => ({
     email: '',
@@ -28,17 +27,7 @@ export default {
       this.loading = true
       try {
         this.user = await this.$apollo.mutate({
-          mutation: gql`
-            mutation($email: String!, $password: String!) {
-              login(email: $email, password: $password) {
-                email
-                username
-                points
-                sweeties
-                bonuses
-              }
-            }
-          `,
+          mutation: login,
           variables: {
             email: this.email,
             password: this.password
